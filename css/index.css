@@ -1,0 +1,25 @@
+body {
+  overflow-x: hidden;
+  font-family: var(--font);
+}
+
+/* Texto central */
+section#head div#mensagem_central p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mensagem_central {
+    margin-top: 200px;
+}
+
+#Avatar {
+  animation: avatar-color-change 4s infinite alternate;
+  font-weight: bold;
+  font-size: 60px;
+}
+#Inteligente {
+  margin-top: -20px;
+  font-size: 70px;
+}

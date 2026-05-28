@@ -1,0 +1,14 @@
+/* Style de todas as páginas */
+* {
+  margin: 0;
+  padding: 0;
+  position: relative; /* Necessário para o z-index funcionar */
+  z-index: 1;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+/* Evita rolagem horizontal indesejada em telas menores */
+body {
+  overflow-x: hidden; 
+}

@@ -1,0 +1,78 @@
+#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+    min-height: 60%;
+    border-radius: 15px;
+    color: var(--color);
+    gap: 20px;
+}
+
+h2 {
+    font-family: var(--font);
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--color);
+}
+/* Caixa de texto sobre os Projetos */
+#projeto1,
+#projeto2 {
+    font-family: var(--font);
+    padding: 20px 35px;
+    width: 700px;
+    min-width: 280px;
+    height: auto;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+p {
+    margin-bottom: 17px;
+}
+/* Background com cores variádas */
+#projeto1 {
+    background: linear-gradient(135deg, #213175, #261f5f);
+}
+
+#projeto2 {
+    background: linear-gradient(135deg, #512a62, #472148);
+}
+
+/* Animação na div ao colocar o mouse sobre */
+#projeto1:hover,
+#projeto2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade: tablets e smartphones */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #sobre {
+        margin: 30px auto;
+    }
+
+    #projeto1,
+    #projeto2 {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 0;
+        padding: 25px 20px;
+    }
+}

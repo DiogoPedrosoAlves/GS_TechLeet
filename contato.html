@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Integrantes</title>
+        <link rel="icon" type="image/x-icon" href="imagens/IconeUser.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/head.css">
+        <link rel="stylesheet" href="css/variaveis.css">
+        <link rel="stylesheet" href="css/head.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/integrantes.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <script src="js/menu.js"></script>
+        <script src="js/contato.js"></script>
+        <script type="module" src="js/sistema-solar.js"></script>
+    </head>
+    <body>
+        <!-- Cabeçalho / Cabeça do site -->
+        <section id="head">
+            <canvas id="sistemaSolar"></canvas>
+            <header>
+                <div id="nome">
+                    <a href="index.html"><h1>CarbonEye</h1></a>
+                </div>
+                <button type="button" id="menu-hamburguer"
+                    aria-label="Abrir menu" aria-controls="navegacao"
+                    aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="navegacao">
+                    <nav>
+                        <a href="sobre.html">Sobre</a>
+                        <a href="integrantes.html">Integrantes</a>
+                        <a href="contato.html">Contato</a>
+                        <a href="faq.html">FAQ</a>
+                    </nav>
+                </div>
+            </header>
+                <!-- Formulario de dúvidas -->
+                <main class="pagina_contato">
+                    <section class="introducao_contato">
+                        <h2>Vamos conversar. Qual a sua Dúvida ?</h2>
+                        <p>E-mail para mais informações</p>
+                        <div class="e-mail_card">
+                            <img src="assets/email.png" alt="email">
+                            <div>
+                                <h4>Contate em</h4>
+                                <p>rm570024@fiap.com.br</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="formulario_contato">
+                        <h3>Queremos te ouvir!</h3><br>
+                        <form id="contactForm">
+                            <!-- Nome inserido -->
+                            <label>
+                                Nome*
+                                <input type="text" name="nome" id="nomeInput"
+                                    placeholder="Nome completo" required>
+                            </label>
+                            <!-- E-mail inserido -->
+                            <label>
+                                E-mail*
+                                <input type="email" name="email" id="email"
+                                    placeholder="Email" required>
+                            </label>
+                            <!-- Assunto não obrigatório inserido -->
+                            <label>
+                                Assunto
+                                <input type="text" name="assunto" id="assunto"
+                                    placeholder="Assunto">
+                            </label>
+                            <!-- Mensagem inserida -->
+                            <label>
+                                Mensagem*
+                                <textarea name="mensagem" id="mensagem" rows="4"
+                                    required></textarea>
+                            </label>
+                            <!-- Botão de commit -->
+                            <button type="submit" class="botao_commit">Enviar
+                                Mensagem</button>
+                            <p id="statusMessagem" aria-live="polite"></p>
+                        </form>
+                    </section>
+                </main>
+        </section>
+        <!-- Rodapé / Footer do site -->
+        <footer>
+            <div class="logo-footer">
+                <img src="assets/TechLeet.png" alt="TechLeet">
+                <p>Copyright © 2026 TechLeet. Todos os direitos reservados.</p>
+            </div>
+            <div class="logo-footer2">
+                <h3 id="titulo_suporte">Suporte</h3>
+                <div class="suport">
+                    <img src="assets/teams.png" alt="Teams">
+                    <a
+                        href="https://teams.microsoft.com/l/chat/48:notes/conversations?context=%7B%22contextType%22%3A%22chat%22%7D">Teams</a>
+                </div>
+                <div class="suport">
+                    <img src="assets/email.png" alt="e-mail">
+                    <a href="mailto:rm570024@fiap.com.br">E-mail</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
