@@ -3,23 +3,41 @@ body {
   font-family: var(--font);
 }
 
-/* Texto central */
-section#head div#mensagem_central p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+  display: flex;
+  height: 700px;
+  background-color: #072759;
+  box-shadow: 0px 0px 1000px 220px #072759;
 }
 
-#mensagem_central {
-    margin-top: 200px;
+
+
+#texto_inicial {
+  background-color: #072759;
+  width: 35%;
+  text-align: center;
+  justify-items: center;
+  z-index: 2;
+  box-shadow:0px 0px 100px 150px #072759;
+}
+#texto_inicial h2{
+  font-size: 80px;
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+#texto_inicial p{
+  margin-top: 15px;
+  width: 80%;
+  text-align: left;
+  height: auto;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
-#Avatar {
-  animation: avatar-color-change 4s infinite alternate;
-  font-weight: bold;
-  font-size: 60px;
-}
-#Inteligente {
-  margin-top: -20px;
-  font-size: 70px;
+#imagem_inicial {
+  background-image: url(/assets/plantacao.jpg);
+  background-size: cover;
+  background-position: right;
+  width: 65%; 
+  z-index: 1;
 }
