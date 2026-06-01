@@ -1,7 +1,7 @@
 /* Cabeçalho do site */
 #head { 
   background-color: var(--background-site);
-  height: 800px;
+  height: 800px auto;
   position: relative;
   overflow: hidden;
 }
@@ -44,7 +44,7 @@ header h1 {
 
 #navegacao a {
   position: relative;
-  color: var(--font);
+  color: var(--color-text);
   text-decoration: none;
   font-size: 15px;
   font-family: var(--font);

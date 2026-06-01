@@ -3,41 +3,112 @@ body {
   font-family: var(--font);
 }
 
+#head {
+  height: 700px;
+}
+#sistemaSolar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 700px;
+  z-index: 0; /* Coloca o canvas atrás de tudo */
+}
+
 main {
   display: flex;
   height: 700px;
-  background-color: #072759;
-  box-shadow: 0px 0px 1000px 220px #072759;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 0px 1000px 220px var(--secondary-color);
 }
 
-
-
 #texto_inicial {
-  background-color: #072759;
   width: 35%;
   text-align: center;
   justify-items: center;
-  z-index: 2;
-  box-shadow:0px 0px 100px 150px #072759;
+  z-index: 1;
+  box-shadow: 0px 0px 100px 150px var(--secondary-color);
 }
-#texto_inicial h2{
+#texto_inicial h2 {
   font-size: 80px;
   margin: 20px;
-  font-family: 'Poppins', sans-serif;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
 }
-#texto_inicial p{
+#texto_inicial p {
   margin-top: 15px;
   width: 80%;
   text-align: left;
   height: auto;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #imagem_inicial {
   background-image: url(/assets/plantacao.jpg);
   background-size: cover;
   background-position: right;
-  width: 65%; 
+  width: 65%;
   z-index: 1;
+}
+
+#ceu_azul {
+  background-color: #8cc7f2;
+  height: 600px;
+  box-shadow: 0px 220px 0px #8cc7f2;
+  z-index: -1;
+}
+
+#caixa_central {
+  background-color: rgba(255, 255, 255, 0.149);
+  height: 430px;
+  width: 1000px;
+  margin-left: 50%;
+  margin-top: -650px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 50px;
+  border: 1px solid #e6e9ef;
+  display: grid;
+  place-items: center;
+}
+
+#caixa_titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#caixa_central h4 {
+  margin-top: -30px;
+  color: var(--color-text);
+  text-align: center;
+  font-size: 60px;
+}
+
+#caixa_texto {
+  text-align: center;
+  width: 75%;
+  margin-top: -100px;
+}
+
+#caixa_texto p {
+  color: var(--color-text);
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#texto_duas_cores_espaco {
+  background: linear-gradient(to right, #261773, #1301ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+#texto_duas_cores_terra {
+  background: linear-gradient(to right, #2c6b24, #2c9c1d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }

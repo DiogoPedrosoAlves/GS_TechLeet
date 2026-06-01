@@ -1,7 +1,7 @@
 const canvas = document.getElementById('sistemaSolar');
 const ctx = canvas.getContext('2d');
 
-// Ajusta o tamanho do canvas para caber na section #head
+// Ajusta o tamanho do canvas para caber no #head
 function redimensionarCanvas() {
     const headSection = document.getElementById('head');
     canvas.width = headSection.offsetWidth;

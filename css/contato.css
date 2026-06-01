@@ -22,17 +22,18 @@ body {
     align-items: center;
     gap: 1rem;
     color: black;
-    background: #f5f7fb;
+    background: rgba(255, 255, 255, 0.149);
+    border:1px solid #e6e9ef;
     padding: 1rem;
     border-radius: 8px;
     margin-top: 1rem;
 }
 div h4 {
-    color: #4a4a4a;
+    color: #ffffff;
     font-weight: bold;
 }
 div p {
-    color: #4a4a4a;
+    color: #ffffff;
 }
 .e-mail_card img {
     width: 48px;
@@ -41,7 +42,7 @@ div p {
 /* Formulário de dúvidas */
 .formulario_contato {
     flex: 1;
-    background:#fff;
+    background:rgba(255, 255, 255, 0.149);
     border:1px solid #e6e9ef;
     padding:1.5rem;
     border-radius:8px;
@@ -54,7 +55,7 @@ div p {
     display:block;
     margin-bottom:0.75rem;
     font-size:0.95rem;
-    color:#4a4a4a;
+    color:#ffffff;
 }
 .formulario_contato input[type="text"],.formulario_contato input[type="email"],.formulario_contato textarea {
     width:100%;
