@@ -29,7 +29,7 @@ body {
   margin-bottom: 32px;
   font-size: 2rem;
   text-align: center;
-  color: white;
+  color: var(--title);
 }
 
 /* Grade dos membros: quebra de linha automática, sempre dentro da tela */

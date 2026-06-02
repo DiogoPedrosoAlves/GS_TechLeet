@@ -3,18 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Solução</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/variaveis.css">
         <link rel="stylesheet" href="css/head.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/solucao.css">
+        <link rel="stylesheet" href="css/textoSite.css">
         <script type="module" src="js/menu.js"></script>
         <script type="module" src="js/sistema-solar.js"></script>
         <script type="module" src="js/footer.js"></script>
 
     </head>
     <body>
+        <!-- Cabeçalho / Cabeça do site -->
         <section id="head">
             <canvas id="sistemaSolar"></canvas>
             <header>
@@ -39,10 +41,23 @@
                     </nav>
                 </div>
             </header>
-            <section id="cenario_chao">
+            <main>
+                <div id="caixa_central">
+                    <div id="caixa_titulo">
+                        <h4>Solução</h4>
+                    </div>
+                    <div id="caixa_texto">
+                        <p>A solução para esse cenário de incertezas está em cima dos nossos narizes, unindo a inovação aeroespacial ao campo por meio do monitoramento avançado por satélite. A iniciativa do CarbonEye utiliza os dados coletados pelo satélite <i>Sentinel-5P</i> para mapear com precisão os níveis de dióxido de carbono (CO₂) da região escolhida pelo produtor. Essa tecnologia atua como um radar que monitora o nível de pureza do ar, traduzindo indicadores do espaço em diagnósticos claros e localizados para a realidade de cada propriedade rural.</p>
+
+                        <p>O foco desse ecossistema tecnológico está o agricultor, que deixa de ficar vulnerável às variações do tempo e passa a ter o controle estratégico de sua plantação. Com o acesso a essas informações, o produtor rural ganha a capacidade de se prevenir contra situações climáticas inesperadas. Essa tomada de decisão antecipada protege a saúde da lavoura contra perdas severas, assegurando a produtividade do campo.</p>
+                    </div>
+                </div>
+            </main>
+            <div id="cenario_chao">
                 <canvas id="canvas_natureza"></canvas>
-            </section>
+            </div>
         </section>
+
         <footer>
             <div class="logo-footer">
                 <img src="assets/TechLeet.png" alt="TechLeet">

@@ -1,66 +1,47 @@
-#sobre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    width: 90%;
-    min-height: 60%;
-    border-radius: 15px;
-    color: var(--color);
-    gap: 20px;
+#caixa_central {
+  background-color:rgba(255, 255, 255, 0.149);
+  min-height: 430px;
+  height: auto;
+  width: 1000px;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translate(-50%, -0%);
+  z-index: 1;
+  border-radius: 50px;
+  border: 1px solid #e6e9ef;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  box-sizing: border-box; 
 }
 
-h2 {
-    font-family: var(--font);
-    text-align: center;
-    font-size: 2rem;
-    color: var(--color);
+#caixa_texto {
+  text-align: left !important; /* Parágrafo alinhado à esquerda */
+  width: 100% !important;
 }
 
-h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: var(--color);
-}
-/* Caixa de texto sobre os Projetos */
-#projeto1,
-#projeto2 {
-    font-family: var(--font);
-    padding: 20px 35px;
-    width: 700px;
-    min-width: 280px;
-    height: auto;
-    border-radius: 20px;
-    color: #fff;
-    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+#caixa_central img {
+  width: 40%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
-p {
-    margin-bottom: 17px;
-}
-/* Background com cores variádas */
-#projeto1 {
-    background: linear-gradient(135deg, #213175, #261f5f);
-}
-
-#projeto2 {
-    background: linear-gradient(135deg, #512a62, #472148);
-}
-
-/* Animação na div ao colocar o mouse sobre */
-#projeto1:hover,
-#projeto2:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+/* Define o container da direita */
+#conteudo_direita {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Responsividade: tablets e smartphones */
 @media (max-width: 768px) {
-    h2 {
+    h4 {
+        text-align: center;
+        justify-items: center;
         font-size: 1.5rem;
     }
 
@@ -68,11 +49,22 @@ p {
         margin: 30px auto;
     }
 
-    #projeto1,
-    #projeto2 {
+    #caixa_central {
         box-sizing: border-box;
-        width: 100%;
+        width: 90%; /* Ajuste para não bugar no celular */
         min-width: 0;
         padding: 25px 20px;
+        flex-direction: column; /* No celular, a imagem fica em cima e o texto embaixo */
+        text-align: center;
+    }
+
+    #caixa_central img {
+        width: 80%; /* A imagem fica maior no celular */
+        margin-bottom: 20px;
+    }
+
+    #conteudo_direita {
+        width: 100%;
+        align-items: center; /* Centraliza no celular */
     }
 }

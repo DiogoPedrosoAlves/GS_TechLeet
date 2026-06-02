@@ -8,6 +8,8 @@
 
 /* Estilo do canvas do Sistema Solar */
 #sistemaSolar {
+  display: grid;
+  place-items: center;
   position: absolute;
   top: 0;
   left: 0;
