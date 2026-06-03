@@ -1,80 +1,74 @@
-# Site HTML - Challenge 2026
-------------------------------
+# Site HTML - Global Solution 2026
+
+---
+
 ## Projeto
 
-### Avatares Inteligentes
+### CarbonEye
 
-No site criado apresentamos nossa ideia de solução Avatares Inteligentes para o Desafio 3 do Challenge da SoulPrime. Nos sentimos desafiados a criar avatares para os usuários fisando uma maior interação da parte dos mesmos para com o aplicativo SoulUP, apartir da costumização de visuais dos seus avatares particulares com base nos cosméticos disponibilizados na Loja de Cosméticos e roupas distribuidas pelos influêncers parceiros.
+Apresemntamos a ideia CarbonEye, onde visamos mapear os níveis de dióxido de carbono (CO₂) com base de dados oferecida pelo satélite Sentinel-5P. Essa tecnologia funicona como um radar que faz uma varredura da qualidade do ar, afim de essas informações sejam oferecidas aos agricultores rurais, para uma maior eficiencia de sua plantação de acordo com a previsão da qualidade do ar no ambiente.
 
-### Avatar SoulUp
-
-Pensamos também na criação de um Avatar SoulUp, um mascote que represente de forma viva e personificada a identidade visual da empresa. A proposta é dar um rosto e uma personalidade à marca, tornando-a mais próxima, memorável e capaz de gerar conexão emocional com o público. " Quem não é visto não é lembrado ".
-
-------------------------------
+---
 
 ## Tecnologias Utilizadas
 
- - HTML
- - CSS
- - JavaScript
+- HTML
+- CSS
+- JavaScript
 
-------------------------------
+---
 
 ## Estrutura de pastas do projeto
 
-Dividimos os arquivos em pastas, os arquivos de CSS estão todos na pasta /css; os de JS estão em /js; e as imagens e icones se encontram em /imagens.
+Dividimos os arquivos em pastas, os arquivos de CSS estão todos na pasta /css; os de JS estão em /js; e as imagens e icones se encontram em /assets.
 
-------------------------------
+---
 
 ## Autores e Créditos
 
-Diogo Pedroso Alves 
-1TDSR 
+Diogo Pedroso Alves
+1TDSR
 RM: 570024
 [GitHub](https://github.com/DiogoPedrosoAlves)
 [Linkedin](https://www.linkedin.com/in/diogo-pedroso-alves-895346237/)
 
-Samuel Pedroso Xavier 
+Samuel Pedroso Xavier
 1TDSR
 RM: 569335
 [GitHub](https://github.com/OSamuelXavierDev)
 [Linkedin](https://www.linkedin.com/in/samuel-xavier-061434274)
 
-Felipe Ferreira Amado 
+Felipe Ferreira Amado
 1TDSR
 RM: 572567
 [GitHub](https://github.com/FelipeFerreiraAmado)
 [Linkedin](https://www.linkedin.com/in/felipe-amado/)
 
-Murilo Munari Bissiato 
+Murilo Munari Bissiato
 1TDSR
 RM: 569602
 [GitHub](https://github.com/murilomunari)
 [Linkedin](https://www.linkedin.com/in/murilomunaribissiato/)
 
-Pedro Henrique Toledo Sampaio 
+Pedro Henrique Toledo Sampaio
 1TDSR
 RM: 571707
 [GitHub](https://github.com/PedroSampaio20)
 [Linkedin](https://www.linkedin.com/in/pedro-sampaio2002/)
 
-------------------------------
+---
 
 ## Imagens e representação do projeto
 
-![Descrição da imagem](imagens/AvatarF-Base.jpg)
-![Descrição da imagem](imagens/AvatarF-3.png)
 
-
-
-------------------------------
+---
 
 ## Link do repositório e vídeo
 
-[Repositório_GitHub](https://github.com/DiogoPedrosoAlves/Challenge_SoulUp_TechLeet)
+[Repositório_GitHub](https://github.com/DiogoPedrosoAlves/GS_TechLeet)
 [Vídeo do site](https://youtu.be/e9G-t3uL0dg)
 
-------------------------------
+---
 
 ## Contato
 
@@ -90,4 +84,4 @@ rm569602@fiap.com.br
 
 rm571707@fiap.com.br
 
-------------------------------
+---
