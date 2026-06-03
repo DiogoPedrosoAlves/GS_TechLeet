@@ -1,0 +1,149 @@
+/* Div da caixa de pergunta */
+.caixa_pergunta {
+  min-height: 550px;
+  max-width: 700px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.149);
+  border: 1px solid #e6e9ef;
+  border-radius: 15px;
+}
+
+.caixa_pergunta h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 45px;
+  color: #0B63D6;
+}
+
+/* Item de pergunta */
+.caixa_pergunta .pergunta {
+  width: 100%;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 18px 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  margin: 20px;
+}
+
+h3 {
+  color: rgb(69, 69, 69);
+  font-size: 20px;
+}
+p {
+  color: #000;
+}
+
+.caixa_pergunta .pergunta:hover {
+  background: #f9f9f9;
+}
+
+/* Ícone feito com barras pretas */
+.caixa_pergunta .icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Barra horizontal */
+.caixa_pergunta .icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  background: #a3a3a3;
+  transform: translateY(-50%);
+  transition: background 0.2s ease;
+}
+
+/* Barra vertical */
+.caixa_pergunta .icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #a3a3a3;
+  transform: translateX(-50%);
+  transition: height 0.2s ease;
+}
+
+/* Quando ativo gira e some a barra vertical */
+.caixa_pergunta .pergunta.active .icon {
+  transform: rotate(180deg);
+}
+
+.caixa_pergunta .pergunta.active .icon::after {
+  height: 0;
+}
+
+/* Área da resposta */
+.caixa_pergunta .resposta {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0; /* Começa invisível */
+  background: #fafafa94;
+  padding: 0 20px;
+  line-height: 1.6;
+
+  /* Transição mais refinada com cubic-bezier para um efeito natural */
+  transition:
+    max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease,
+    padding 0.4s ease,
+    margin-top 0.4s ease;
+
+  border-right: 2px solid #dcdcdc;
+  border-left: 2px solid #dcdcdc;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.caixa_pergunta .resposta.active {
+  /* A altura agora é controlada pelo JS via style.maxHeight */
+  opacity: 1; /* Aparece suavemente */
+  margin-top: -18px;
+  padding: 30px 20px 20px 20px; /* Ajuste no padding para não "pular" */
+  border-bottom: 2px solid #dcdcdc;
+}
+
+/* Responsividade: tablets e smartphones */
+@media (max-width: 768px) {
+  .caixa_pergunta {
+    min-height: auto;
+    margin: 20px;
+  }
+
+  .caixa_pergunta h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  .caixa_pergunta .pergunta {
+    padding: 14px 16px;
+  }
+
+  .caixa_pergunta .pergunta h3 {
+    font-size: 16px;
+  }
+
+  .item {
+    margin: 14px;
+  }
+}

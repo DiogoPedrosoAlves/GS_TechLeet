@@ -1,0 +1,29 @@
+#caixa_titulo {
+  display: flex;
+  justify-content: center; /* Alinha o título flex para a esquerda */
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+#caixa_central h4 {
+  margin-top: 0; /* Remove a margem negativa */
+  color: #0b63D6;
+  text-align: left; /* Título justificado à esquerda */
+  font-size: 60px;
+  font-family: var(--font);
+}
+
+#caixa_texto {
+  text-align: center; /* Parágrafo alinhado à esquerda */
+  width: 75%;
+  margin-top: 0; /* Remove a margem negativa */
+  font-family: var(--font);
+}
+
+#caixa_texto p {
+  color: var(--color-text);
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5; /* Deixa a leitura do parágrafo mais confortável */
+}

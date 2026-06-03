@@ -1,0 +1,70 @@
+#caixa_central {
+  background-color:rgba(255, 255, 255, 0.149);
+  min-height: 430px;
+  height: auto;
+  width: 1000px;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translate(-50%, -0%);
+  z-index: 1;
+  border-radius: 50px;
+  border: 1px solid #e6e9ef;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  box-sizing: border-box; 
+}
+
+#caixa_texto {
+  text-align: left !important; /* Parágrafo alinhado à esquerda */
+  width: 100% !important;
+}
+
+#caixa_central img {
+  width: 40%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Define o container da direita */
+#conteudo_direita {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Responsividade: tablets e smartphones */
+@media (max-width: 768px) {
+    h4 {
+        text-align: center;
+        justify-items: center;
+        font-size: 1.5rem;
+    }
+
+    #sobre {
+        margin: 30px auto;
+    }
+
+    #caixa_central {
+        box-sizing: border-box;
+        width: 90%; /* Ajuste para não bugar no celular */
+        min-width: 0;
+        padding: 25px 20px;
+        flex-direction: column; /* No celular, a imagem fica em cima e o texto embaixo */
+        text-align: center;
+    }
+
+    #caixa_central img {
+        width: 80%; /* A imagem fica maior no celular */
+        margin-bottom: 20px;
+    }
+
+    #conteudo_direita {
+        width: 100%;
+        align-items: center; /* Centraliza no celular */
+    }
+}

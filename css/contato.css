@@ -1,0 +1,114 @@
+body {
+    font-family: var(--font);
+    margin: 0;
+}
+/* Área da página de contato */
+.pagina_contato {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.introducao_contato {
+    flex: 1;
+}
+.introducao_contato h2 { 
+    margin: 0 0 .5rem;
+    color: #0b63d6;
+}
+.e-mail_card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+    background: rgba(255, 255, 255, 0.149);
+    border:1px solid #e6e9ef;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+div h4 {
+    color: #ffffff;
+    font-weight: bold;
+}
+div p {
+    color: #ffffff;
+}
+.e-mail_card img {
+    width: 48px;
+    height: 48px
+}
+/* Formulário de dúvidas */
+.formulario_contato {
+    flex: 1;
+    background:rgba(255, 255, 255, 0.149);
+    border:1px solid #e6e9ef;
+    padding:1.5rem;
+    border-radius:8px;
+    box-shadow:0 6px 18px rgba(11,99,214,0.06);
+}
+.formulario_contato h3 {
+    margin-top:0;
+}
+.formulario_contato label {
+    display:block;
+    margin-bottom:0.75rem;
+    font-size:0.95rem;
+    color:#ffffff;
+}
+.formulario_contato input[type="text"],.formulario_contato input[type="email"],.formulario_contato textarea {
+    width:100%;
+    padding:.6rem .8rem;
+    border:1px solid #d7dbe6;
+    border-radius:6px;font-size:1rem;
+    box-sizing:border-box;
+    color:#000;
+}
+.formulario_contato textarea {
+    resize:vertical
+}
+/* Botão para enviar as informações */
+.botao_commit {
+    background:#0b63d6;
+    color:#fff;
+    padding:.65rem 1rem;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    margin-top:.5rem;
+}
+.botao_commit:disabled {
+    opacity:.6;cursor:not-allowed;
+}
+#statusMessagem {
+    margin-top:0.75rem;
+    font-size:0.95rem;
+}
+/* Verificação de dados inseridos */
+.successo {
+    color:green;
+}
+.erro {
+    color:#c0392b;
+}
+/* Responsividade: tablets e smartphones */
+@media (max-width: 800px) {
+    .pagina_contato {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagina_contato {
+        padding: 1rem;
+    }
+    .introducao_contato h2 {
+        font-size: 1.4rem;
+    }
+    .formulario_contato {
+        padding: 1rem;
+    }
+}
