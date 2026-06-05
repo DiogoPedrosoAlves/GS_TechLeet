@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded',function(){
         }catch(err){
             status.textContent='Ocorreu um erro ao enviar. Tente novamente.'; status.className='erro';
         }finally{
-            botao.disabled = false; botao.textContent='Send message';
+            botao.disabled = false; botao.textContent='Enviar Mensagem';
         }
     });
 });

@@ -68,7 +68,7 @@ RM: 571707
 ## Link do repositório e vídeo
 
 [Repositório_GitHub](https://github.com/DiogoPedrosoAlves/GS_TechLeet)
-[Vídeo do site](https://youtu.be/e9G-t3uL0dg)
+[Vídeo do site](https://youtu.be/QhOPOK03NgY)
 
 ---
 
