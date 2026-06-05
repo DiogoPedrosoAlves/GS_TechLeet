@@ -13,6 +13,7 @@
         <script type="module" src="js/menu.js"></script>
         <script type="module" src="js/sistema-solar.js"></script>
         <script type="module" src="js/footer.js"></script>
+        <script type="module" src="js/solucao.js"></script>
 
     </head>
     <body>
@@ -42,14 +43,107 @@
                 </div>
             </header>
             <main>
+
                 <div id="caixa_central">
                     <div id="caixa_titulo">
                         <h4>Solução</h4>
                     </div>
                     <div id="caixa_texto">
-                        <p>A solução para esse cenário de incertezas está em cima dos nossos narizes, unindo a inovação aeroespacial ao campo por meio do monitoramento avançado por satélite. A iniciativa do CarbonEye utiliza os dados coletados pelo satélite <i>Sentinel-5P</i> para mapear com precisão os níveis de dióxido de carbono (CO₂) da região escolhida pelo produtor. Essa tecnologia atua como um radar que monitora o nível de pureza do ar, traduzindo indicadores do espaço em diagnósticos claros e localizados para a realidade de cada propriedade rural.</p>
+                        <p>A solução para esse cenário de incertezas está em
+                            cima dos nossos narizes, unindo a inovação
+                            aeroespacial ao campo por meio do monitoramento
+                            avançado por satélite. A iniciativa do CarbonEye
+                            utiliza os dados coletados pelo satélite
+                            <i>Sentinel-5P</i> para mapear com precisão os
+                            níveis de dióxido de carbono (CO₂) da região
+                            escolhida pelo produtor. Essa tecnologia atua como
+                            um radar que monitora o nível de pureza do ar,
+                            traduzindo indicadores do espaço em diagnósticos
+                            claros e localizados para a realidade de cada
+                            propriedade rural.</p>
 
-                        <p>O foco desse ecossistema tecnológico está o agricultor, que deixa de ficar vulnerável às variações do tempo e passa a ter o controle estratégico de sua plantação. Com o acesso a essas informações, o produtor rural ganha a capacidade de se prevenir contra situações climáticas inesperadas. Essa tomada de decisão antecipada protege a saúde da lavoura contra perdas severas, assegurando a produtividade do campo.</p>
+                        <p>O foco desse ecossistema tecnológico está o
+                            agricultor, que deixa de ficar vulnerável às
+                            variações do tempo e passa a ter o controle
+                            estratégico de sua plantação. Com o acesso a essas
+                            informações, o produtor rural ganha a capacidade de
+                            se prevenir contra situações climáticas inesperadas.
+                            Essa tomada de decisão antecipada protege a saúde da
+                            lavoura contra perdas severas, assegurando a
+                            produtividade do campo.</p>
+                    </div>
+                </div>
+                <!-- Demonstração da ideia -->
+                <div id="simulador-container">
+                    <!-- Painel de Controle (Esquerda) -->
+                     <h4></h4>
+                    <div class="painel-controle">
+                        <h3>Painel de Monitoramento</h3>
+                        <p>Selecione uma região agrícola para que o satélite
+                            Sentinel-5P faça a leitura dos dados
+                            atmosféricos.</p>
+
+                        <div class="grupo-seletor">
+                            <label for="seletor-regiao">Escolha a Área de
+                                Cultivo:</label>
+                            <select id="seletor-regiao">
+                                <option value disabled selected>Selecione uma
+                                    região...</option>
+                                <option value="sudeste">Região Sudeste —
+                                    Lavouras de Café</option>
+                                <option value="centro_oeste">Região Centro-Oeste
+                                    — Cultivo de Soja</option>
+                                <option value="sul">Região Sul — Plantações de
+                                    Trigo</option>
+                            </select>
+                        </div>
+
+                        <button id="btn-escanear" type="button">Iniciar
+                            Escaneamento Orbital</button>
+                    </div>
+
+                    <!-- Painel de Exibição / Tela do Satélite (Direita) -->
+                    <div class="painel-display" id="painel-display">
+
+                        <!-- Estado Inicial (Vazio) -->
+                        <div id="display-vazio" class="tela-estado">
+                            <img src="assets/IconeSatélite.png" alt="Ícone de Radar"
+                                class="icone-radar">
+                            <p>Aguardando comando de telemetria...</p>
+                        </div>
+
+                        <!-- Estado de Carregamento -->
+                        <div id="display-loading"
+                            class="tela-estado-animada hidden">
+                            <div class="spinner"></div>
+                            <p class="texto-loading">Conectando ao
+                                Sentinel-5P...</p>
+                            <p class="sub-loading">Processando dados de CO₂ em
+                                nuvem...</p>
+                        </div>
+
+                        <!-- Estado de Resultado -->
+                        <div id="display-resultado"
+                            class="tela-resultado hidden">
+                            <div class="resultado-header">
+                                <h4>Diagnóstico da Atmosfera</h4>
+                                <span id="badge-status"
+                                    class="badge">Estável</span>
+                            </div>
+
+                            <div class="metrica-co2">
+                                <span class="label">Concentração de CO₂
+                                    Regional:</span>
+                                <span id="valor-co2" class="valor">--</span>
+                            </div>
+
+                            <div class="caixa-alerta">
+                                <h5>Recomendação Preventiva para o
+                                    Agricultor:</h5>
+                                <p id="texto-recomendacao">--</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </main>

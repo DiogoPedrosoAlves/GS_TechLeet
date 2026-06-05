@@ -13,34 +13,6 @@
   place-items: center;
 }
 
-#caixa_titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-
-#caixa_central h4 {
-  margin-top: -30px;
-  color: #0b63D6;
-  text-align: center;
-  font-size: 60px;
-  font-family: var(--font);
-
-}
-
-#caixa_texto {
-  text-align: center;
-  width: 75%;
-  margin-top: -80px;
-  font-family: var(--font);
-}
-
-#caixa_texto p {
-  color: var(--color-text);
-  margin-top: 20px;
-  font-size: 18px;
-}
 
 /* Responsividade: tablets e smartphones */
 @media (max-width: 768px) {
@@ -52,5 +24,256 @@
 
   #caixa_central {
     width: 90%; /* Ajuste para não bugar no celular */
+  }
+}
+
+/* Container Principal do Simulador */
+#simulador-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 950px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(230, 233, 239, 0.3);
+  border-radius: 30px;
+  margin: 40px auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: var(--font), sans-serif;
+}
+
+/* Painel de Controle (Esquerda) */
+.painel-controle {
+  width: 45%;
+  padding: 40px;
+  background-color: rgba(11, 99, 214, 0.05);
+  border-right: 1px solid rgba(230, 233, 239, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.painel-controle h3 {
+  color: #0b63D6;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.painel-controle p {
+  color: var(--color-text);
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.grupo-seletor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.grupo-seletor label {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+option {
+  color: #333;
+}
+
+.grupo-seletor select {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.grupo-seletor select:focus {
+  border-color: #0b63D6;
+}
+
+#btn-escanear {
+  background-color: #0b63D6;
+  color: #ffffff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+#btn-escanear:hover {
+  background-color: #084fa1;
+}
+
+#btn-escanear:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Painel de Display / Tela do Satélite (Direita) */
+.painel-display {
+  width: 55%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  min-height: 350px;
+  position: relative;
+}
+
+.tela-estado {
+  text-align: center;
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+.icone-radar {
+  width: 50px;
+  height: auto;
+  opacity: 0.5;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Loading Spinner */
+.tela-estado-animada {
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #0b63D6;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+.texto-loading {
+  color: #0b63D6;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sub-loading {
+  color: var(--color-text);
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
+/* Layout de Exibição dos Resultados */
+.tela-resultado {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.resultado-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resultado-header h4 {
+  color: #ffffff;
+  font-size: 22px;
+  margin: 0;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.metrica-co2 {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metrica-co2 .label {
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+.metrica-co2 .valor {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.caixa-alerta {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid #0b63D6;
+  padding: 15px;
+  border-radius: 0 12px 12px 0;
+}
+
+.caixa-alerta h5 {
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  font-size: 15px;
+}
+
+.caixa-alerta p {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Utilitários Globais do Simulador */
+.hidden {
+  display: none !important;
+}
+
+/* Animações */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #simulador-container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .painel-controle, .painel-display {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .painel-controle {
+    border-right: none;
+    border-bottom: 1px solid rgba(230, 233, 239, 0.2);
   }
 }

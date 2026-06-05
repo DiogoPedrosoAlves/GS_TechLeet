@@ -60,6 +60,8 @@ RM: 571707
 
 ## Imagens e representação do projeto
 
+![Imagem representando a ideia](assets/RepresentaçãoIdeia.png)
+
 
 ---
 
