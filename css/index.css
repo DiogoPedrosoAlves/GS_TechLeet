@@ -41,7 +41,7 @@ main {
   min-width: 280px;
 }
 #texto_inicial h2 {
-  font-size: 80px;
+  font-size: 5rem;
   margin: 20px;
   margin-bottom: 40px;
   font-family: "Poppins", sans-serif;
