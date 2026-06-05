@@ -1,0 +1,16 @@
+#caixa_central {
+  display: grid;
+  place-items: center;
+}
+
+/* Responsividade: tablets e smartphones */
+@media (max-width: 768px) {
+  #caixa_titulo {
+    margin-bottom: 20px;
+    height: 150px;
+  }
+
+  #caixa_texto {
+    margin-bottom: 35px;
+  }
+}

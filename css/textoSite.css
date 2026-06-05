@@ -9,18 +9,15 @@
   z-index: 1;
   border-radius: 50px;
   border: 1px solid #e6e9ef;
-  display: grid;
-  place-items: center;
 }
 
 #caixa_titulo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
 }
 
-#caixa_central h4 {
+#caixa_central h2 {
   margin-top: -30px;
   color: #0b63D6;
   text-align: center;
@@ -43,7 +40,7 @@
 
 /* Responsividade: tablets e smartphones */
 @media (max-width: 768px) {
-  #caixa_central h4 {
+  #caixa_titulo {
     text-align: center;
     justify-items: center;
     font-size: 3rem;

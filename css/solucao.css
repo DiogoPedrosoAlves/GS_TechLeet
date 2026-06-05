@@ -1,3 +1,59 @@
+#caixa_central {
+  display: flex !important;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+#caixa_central h2 {
+  margin-top: -60px;
+  margin-bottom: 70px;
+  color: #0b63d6;
+  text-align: center;
+  font-size: 60px;
+  font-family: var(--font);
+}
+
+#caixa_texto {
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+#caixa_central img {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Responsividade: tablets e smartphones */
+@media (max-width: 768px) {
+
+  #caixa_central {
+    box-sizing: border-box;
+    width: 90%; /* Ajuste para não bugar no celular */
+    min-width: 0;
+    padding: 25px 20px;
+    flex-direction: column; /* No celular, a imagem fica em cima e o texto embaixo */
+    text-align: center;
+  }
+
+  #caixa_central img {
+    width: 80%; /* A imagem fica maior no celular */
+    margin-bottom: 20px;
+  }
+
+  #conteudo_direita {
+    margin-top: 0px;
+    width: 100%;
+    align-items: center; /* Centraliza no celular */
+  }
+}
+
 /* Container Principal do Simulador */
 #simulador-container {
   display: flex;
@@ -25,7 +81,7 @@
 }
 
 .painel-controle h3 {
-  color: #0b63D6;
+  color: #0b63d6;
   font-size: 26px;
   margin-bottom: 15px;
 }
@@ -67,11 +123,11 @@ option {
 }
 
 .grupo-seletor select:focus {
-  border-color: #0b63D6;
+  border-color: #0b63d6;
 }
 
 #btn-escanear {
-  background-color: #0b63D6;
+  background-color: #0b63d6;
   color: #ffffff;
   border: none;
   padding: 15px 20px;
@@ -79,7 +135,9 @@ option {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.1s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.1s ease;
 }
 
 #btn-escanear:hover {
@@ -126,14 +184,14 @@ option {
   width: 50px;
   height: 50px;
   border: 5px solid rgba(255, 255, 255, 0.1);
-  border-top-color: #0b63D6;
+  border-top-color: #0b63d6;
   border-radius: 50%;
   margin: 0 auto 20px auto;
   animation: spin 1s linear infinite;
 }
 
 .texto-loading {
-  color: #0b63D6;
+  color: #0b63d6;
   font-weight: bold;
   font-size: 18px;
 }
@@ -195,7 +253,7 @@ option {
 
 .caixa-alerta {
   background-color: rgba(255, 255, 255, 0.03);
-  border-left: 4px solid #0b63D6;
+  border-left: 4px solid #0b63d6;
   padding: 15px;
   border-radius: 0 12px 12px 0;
 }
@@ -220,32 +278,57 @@ option {
 
 /* Animações */
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.4; }
-  50% { transform: scale(1.1); opacity: 0.8; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   #simulador-container {
     flex-direction: column;
-    width: 95%;
+    width: 90%;
+    max-width: 720px;
   }
-  .painel-controle, .painel-display {
-    width: 95%;
-    padding: 30px 20px;
+
+  .painel-controle,
+  .painel-display {
+    width: 100%;
+    padding: 20px 12px;
   }
   .painel-controle {
-    width: 95%;
+    width: 100%;
+    margin-right: 0;
     border-right: none;
     border-bottom: 1px solid rgba(230, 233, 239, 0.2);
+    box-sizing: border-box;
+    padding-top: 24px;
+  }
+  .painel-display {
+    min-height: 260px;
+    padding-bottom: 24px;
   }
 }

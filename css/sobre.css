@@ -1,26 +1,15 @@
 #caixa_central {
-  background-color:rgba(255, 255, 255, 0.149);
-  min-height: 430px;
-  height: auto;
-  width: 1000px;
-  margin-top: 50px;
-  margin-left: 50%;
-  transform: translate(-50%, -0%);
-  z-index: 1;
-  border-radius: 50px;
-  border: 1px solid #e6e9ef;
-  display: flex;
-  flex-direction: row; 
+  display: flex !important;
   align-items: center;
   padding: 40px;
   gap: 40px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-#caixa_central h4 {
+#caixa_central h2 {
   margin-top: -60px;
-  margin-bottom: 20px;
-  color: #0b63D6;
+  margin-bottom: 70px;
+  color: #0b63d6;
   text-align: center;
   font-size: 60px;
   font-family: var(--font);
@@ -41,42 +30,31 @@
   object-fit: cover;
 }
 
-/* Define o container da direita */
-#conteudo_direita {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 /* Responsividade: tablets e smartphones */
 @media (max-width: 768px) {
-    h4 {
-        text-align: center;
-        justify-items: center;
-        font-size: 1.5rem;
-    }
 
-    #sobre {
-        margin: 30px auto;
-    }
 
-    #caixa_central {
-        box-sizing: border-box;
-        width: 90%; /* Ajuste para não bugar no celular */
-        min-width: 0;
-        padding: 25px 20px;
-        flex-direction: column; /* No celular, a imagem fica em cima e o texto embaixo */
-        text-align: center;
-    }
+  #sobre {
+    margin: 30px auto;
+  }
 
-    #caixa_central img {
-        width: 80%; /* A imagem fica maior no celular */
-        margin-bottom: 20px;
-    }
+  #caixa_central {
+    box-sizing: border-box;
+    width: 90%; /* Ajuste para não bugar no celular */
+    min-width: 0;
+    padding: 25px 20px;
+    flex-direction: column; /* No celular, a imagem fica em cima e o texto embaixo */
+    text-align: center;
+  }
 
-    #conteudo_direita {
-        width: 100%;
-        align-items: center; /* Centraliza no celular */
-    }
+  #caixa_central img {
+    width: 80%; /* A imagem fica maior no celular */
+    margin-bottom: 20px;
+  }
+
+  #conteudo_direita {
+    margin-top: 20px;
+    width: 100%;
+    align-items: center; /* Centraliza no celular */
+  }
 }
