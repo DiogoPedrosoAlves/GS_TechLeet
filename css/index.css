@@ -29,7 +29,7 @@ main {
   background-color: var(--secondary-color);
   box-shadow: 0px 0px 1000px 220px var(--secondary-color);
 }
-
+/* Texto da página */
 #texto_inicial {
   width: 35%;
   text-align: center;
@@ -65,14 +65,14 @@ main {
   min-height: 700px;
   z-index: 1;
 }
-
+/* Transição de fundo */
 #ceu_azul {
   background-color: #8cc7f2;
   height: 600px;
   box-shadow: 0px 220px 0px #8cc7f2;
   z-index: -1;
 }
-
+/* Texto central da página */
 #caixa_central {
   background-color: #8cc8f254;
   height: 430px;

@@ -64,7 +64,7 @@ h3#titulo_suporte {
 
 #cenario_chao {
   width: 100%;
-  height: 220px; /* Altura fixa para a janela do cenário de natureza */
+  height: 220px;
   margin-bottom: 0%;
   position: relative;
   overflow: hidden;
