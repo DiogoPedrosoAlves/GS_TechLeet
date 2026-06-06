@@ -32,7 +32,6 @@
 
 /* Responsividade: tablets e smartphones */
 @media (max-width: 768px) {
-
   #caixa_central {
     box-sizing: border-box;
     width: 90%; /* Ajuste para não bugar no celular */
@@ -332,3 +331,4 @@ option {
     padding-bottom: 24px;
   }
 }
+  
