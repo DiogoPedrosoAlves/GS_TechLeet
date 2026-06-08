@@ -138,6 +138,11 @@ h4#texto_terra {
     width: 88%;
   }
 
+  #imagem_inicial {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
   #caixa_central h4 {
     font-size: 3rem;
   }
@@ -178,15 +183,20 @@ h4#texto_terra {
   }
 
   #ceu_azul {
-    height: 720px;
+    height: 800px;
     box-shadow: 0px 220px 0px #8cc7f2;
   }
 
   #caixa_central {
-    margin-top: -750px;
+    margin-top: -850px;
     width: 90%;
     height: 700px;
     padding: 40px 20px;
+  }
+
+  #imagem_inicial {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 
   #caixa_central h4 {

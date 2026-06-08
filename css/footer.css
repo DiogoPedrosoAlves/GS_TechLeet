@@ -26,9 +26,9 @@ footer {
   color: var(--color-text-footer);
 }
 
- footer img {
-  height: 60px;
+.logo-footer img {
   margin-bottom: 10px;
+  height: 60px;
   background-color: white;
   border-radius: 9px;
 }
@@ -69,7 +69,6 @@ h3#titulo_suporte {
   position: relative;
   overflow: hidden;
   z-index: 0;
-
 }
 
 #canvas_natureza {
@@ -101,7 +100,7 @@ h3#titulo_suporte {
     padding-bottom: 0;
   }
 
-  .logo-footer>img {
+  .logo-footer > img {
     height: 70px;
   }
 }

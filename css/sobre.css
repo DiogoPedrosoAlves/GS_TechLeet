@@ -48,12 +48,11 @@
   }
 
   #caixa_central img {
-    width: 80%; /* A imagem fica maior no celular */
+    width: 60%; /* A imagem fica maior no celular */
     margin-bottom: 20px;
   }
 
   #conteudo_direita {
-    margin-top: 20px;
     width: 100%;
     align-items: center; /* Centraliza no celular */
   }
