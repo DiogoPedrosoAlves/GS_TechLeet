@@ -1,10 +1,15 @@
 #caixa_central {
   display: grid;
   place-items: center;
+  height: 650px !important;
 }
 
 /* Responsividade: tablets e smartphones */
 @media (max-width: 768px) {
+  #caixa_central {
+  height: auto !important;
+  }
+
   #caixa_titulo {
     margin-bottom: 20px;
     height: 150px;
