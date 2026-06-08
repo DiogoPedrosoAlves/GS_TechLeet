@@ -29,7 +29,7 @@ main {
   background-color: var(--secondary-color);
   box-shadow: 0px 0px 1000px 220px var(--secondary-color);
 }
-
+/* Texto da página */
 #texto_inicial {
   width: 35%;
   text-align: center;
@@ -60,19 +60,21 @@ main {
   background-size: cover;
   background-position: right;
   width: 65%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   min-height: 700px;
   z-index: 1;
 }
-
+/* Transição de fundo */
 #ceu_azul {
   background-color: #8cc7f2;
   height: 600px;
   box-shadow: 0px 220px 0px #8cc7f2;
   z-index: -1;
 }
-
+/* Texto central da página */
 #caixa_central {
-  background-color: rgba(255, 255, 255, 0.149);
+  background-color: #8cc8f254;
   height: 430px;
   width: clamp(320px, 90%, 1000px);
   max-width: 100%;
@@ -112,22 +114,16 @@ main {
   font-size: 18px;
 }
 
-#texto_duas_cores_espaco {
-  background: linear-gradient(to right, #261773, #1301ba);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+h4#texto_espaco {
+  color: #261773;
 }
 
-#texto_duas_cores_terra {
-  background: linear-gradient(to right, #2c6b24, #2c9c1d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+h4#texto_terra {
+  color: #2c6b24;
 }
 
 /* Responsividade: tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   main {
     min-height: 600px;
   }
