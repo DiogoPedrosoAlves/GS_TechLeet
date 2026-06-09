@@ -61,6 +61,8 @@ RM: 571707
 ## Imagens e representação do projeto
 
 ![Imagem representando a ideia](assets/RepresentaçãoIdeia.png)
+![Imagem Sistema Solar](assets/SistemaSolarInicial.png)
+![Imagem Sistema Solar + footer](assets/SistemaSolar+Footer.png)
 
 ---
 
