@@ -20,7 +20,7 @@ Apresemntamos a ideia CarbonEye, onde visamos mapear os níveis de dióxido de c
 
 ## Estrutura de pastas do projeto
 
-Dividimos os arquivos em pastas, os arquivos de CSS estão todos na pasta /css; os de JS estão em /js; e as imagens e icones se encontram em /assets.
+Dividimos os arquivos em pastas, os arquivos de CSS estão todos na pasta /css; os arquivos de JS estão em /js; e as imagens e icones se encontram em /assets.
 
 ---
 
@@ -61,7 +61,6 @@ RM: 571707
 ## Imagens e representação do projeto
 
 ![Imagem representando a ideia](assets/RepresentaçãoIdeia.png)
-
 
 ---
 
